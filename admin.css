@@ -1,0 +1,81 @@
+/* =======================
+   ADMIN DASHBOARD SIDEBAR
+======================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    min-height: 100vh;
+}
+
+/* WRAPPER */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    background: #1e293b;
+    padding: 25px 20px;
+    border-right: 1px solid #e5e7eb;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    color: #e5e7eb;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 12px;
+}
+
+/* SIDEBAR LINKS */
+.sidebar ul li a {
+    display: block;
+    padding: 14px 18px;
+    color: #cbd5e1;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* LINK AKTIV */
+.sidebar ul li a.active {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+/* HOVER */
+.sidebar ul li a:hover {
+    background-color: #0f172a;
+    color: #ffffff;
+    transform: translateX(6px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .admin-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+    }
+}

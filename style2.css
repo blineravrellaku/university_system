@@ -1,0 +1,185 @@
+/* =======================
+   LOGIN PAGE ONLY
+======================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body.login-page {
+    background: #f1f5f9;
+    min-height: 100vh;
+}
+
+/* WRAPPER */
+.login-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* LEFT SIDE */
+.login-left {
+    width: 50%;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e5e7eb;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-left h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.login-left p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 420px;
+}
+
+/* RIGHT SIDE */
+.login-right {
+    width: 50%;
+    background: #ffffff;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* TITLES */
+.login-right h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #0f172a;
+}
+
+/* =======================
+   ROLE BUTTONS
+======================= */
+.login-btn {
+    display: block;
+    padding: 15px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* STUDENT */
+.login-btn.student {
+    background: #2563eb;
+    color: white;
+}
+
+/* INSTRUCTOR */
+.login-btn.instructor {
+    background: #0f172a;
+    color: white;
+}
+
+/* ADMIN */
+.login-btn.admin {
+    background: #6b7280;   /* hiri */
+    color: white;
+}
+
+/* HOVER */
+.login-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.95;
+}
+
+.login-btn.admin:hover {
+    background: #4b5563;   /* hiri më i errët */
+}
+
+/* =======================
+   FORM
+======================= */
+.login-right label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+    color: #334155;
+}
+
+.login-right input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #cbd5f5;
+    font-size: 15px;
+}
+
+.login-right button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-right button:hover {
+    background: #1e40af;
+}
+
+/* =======================
+   ERROR
+======================= */
+.login-error {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+/* =======================
+   LINKS
+======================= */
+.back-link,
+.auth-link {
+    display: inline-block;
+    margin-top: 18px;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 500;
+}
+
+.auth-link {
+    margin-top: 10px;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 900px) {
+    .login-wrapper {
+        flex-direction: column;
+    }
+
+    .login-left,
+    .login-right {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .login-left h1 {
+        font-size: 34px;
+    }
+}
